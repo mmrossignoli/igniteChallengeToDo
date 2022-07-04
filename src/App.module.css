@@ -1,0 +1,126 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 736px;
+  flex: 1;
+  width: 100%;
+}
+.main form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 8px;
+  justify-content: center;
+  margin-top: -1.6875rem;
+  height: 3.375rem;
+  width: 100%;
+  gap: 8px;
+}
+.main form input {
+  flex: 1;
+  padding: 16px;
+  gap: 8px;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--gray-300);
+  background: var(--gray-500);
+}
+
+.main form input:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--purple-500);
+}
+.main form button {
+  height: 3.375rem;
+  border: none;
+  border-radius: 8px;
+  color: var(--gray-100);
+  background: var(--blue-700);
+  transition: background 0.1s;
+  padding: 16px;
+  gap: 0.5rem;
+  display: flex;
+  font-weight: bold;
+  line-height: 1.4;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.main form button:hover {
+  background: var(--blue-300);
+}
+.main form button:disabled {
+  background: var(--gray-400);
+  cursor: not-allowed;
+}
+.taskList {
+  width: 100%;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 736px;
+  flex: 1;
+  min-height: 244px;
+}
+.taskListHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-weight: bold;
+}
+.taskCount {
+  color: var(--gray-200);
+  background: var(--gray-400);
+  font-size: 0.75rem;
+  border-radius: 999px;
+  padding: 2px 8px;
+  gap: 10px;
+}
+.createdTasks {
+  color: var(--blue-300);
+}
+.doneTasks {
+  color: var(--purple-300);
+}
+.board {
+  width: 100%;
+  margin-top: 24px;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+.emptylist svg {
+  color: var(--gray-300);
+}
+.emptylist p,
+strong {
+  color: var(--gray-300);
+}
+.emptylist {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
